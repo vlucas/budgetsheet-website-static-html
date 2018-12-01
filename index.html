@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title>BudgetSheet</title>
+    <link rel="shortcut icon" href="https://cdn.glitch.com/1cde7807-e2c1-4ee9-82f4-1f7665847535%2Ffavicon.png?1543100949592" />
+    <link rel="stylesheet" href="css/spectre.min.css">
+  </head>
+
+  <body>
+    <header class="navbar">
+      <section class="navbar-section">
+        <a href="/" class="navbar-brand mr-2">BudgetSheet</a>
+      </section>
+      <section class="navbar-section">
+        <a href="/">Link</a>
+      </section>
+    </header>
+
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+
+          <!-- link form -->
+          <div class="card">
+            <div class="card-body">
+              <p>
+                Live banking data comes from your <a href="https://dashboard.plaid.com/account/keys">Plaid Account</a>.
+                In order to get a <code>public_token</code> for your spreadsheet, please enter your
+                <code>public_key</code> below.
+              </p>
+              <form method="post" id="plaid-link-form">
+                <div class="form-group">
+                  <label class="form-label" for="PLAID_PUBLIC_KEY">Plaid <code>public_key</code></label>
+                  <input class="form-input" type="text" name="PLAID_PUBLIC_KEY" id="PLAID_PUBLIC_KEY" placeholder="">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Environment</label>
+                  <label class="form-radio">
+                    <input type="radio" name="PLAID_ENV" value="sandbox" checked>
+                    <i class="form-icon"></i> Sandbox (test bank data, fake logins)
+                  </label>
+                  <label class="form-radio">
+                    <input type="radio" name="PLAID_ENV" value="development">
+                    <i class="form-icon"></i> Development (live bank data, real logins)
+                  </label>
+                </div>
+                <button class="btn btn-primary" type="submit">Link Account</button>
+              </form>
+              <p>
+                <small>For your convenience, these values are stored on your computer in your browser's localStorage on
+                  submit (so you can link multiple accounts without entering these values each time). If you do not
+                  want these stored even on your own computer, you can
+                  <a href="#" id="localStorage-clear">clear these values now</a>.</small>
+              </p>
+            </div>
+          </div>
+
+          <p>
+            Public Token: <code id="result-public-token"></code>
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.plaid.com/link/v2/stable/link-initialize.js"></script>
+    <script src="js/index.js" defer></script>
+  </body>
+</html>
