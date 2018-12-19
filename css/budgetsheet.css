@@ -1,0 +1,70 @@
+.section-hero {
+  position: relative;
+  min-height: 22rem;
+  padding: 4rem 0;
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+  color: #fefefe;
+}
+.bg-hero {
+  background-color: #dfefde;
+  background: linear-gradient(to top, #169f49 0%, #63bc46 100%);
+}
+
+/* svg */
+.svg-wave {
+  position: absolute;
+  bottom: -1px;
+  color: white;
+}
+.wave-path {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #FFFFFF;
+}
+
+.section {
+  padding: 2rem 0;
+}
+.section-steps {
+  min-height: 20rem;
+}
+.section-steps .column {
+  padding: 2rem 0;
+}
+.step-number {
+  display: inline-block;
+  padding: 0.5rem;
+  background-color: #63bc46;
+  color: white;
+  font-weight: bold;
+  border-radius: 2rem;
+}
+
+.section-heading {
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+h1, h2, h3, h4 {
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+
+a, a.active, a:active, a:focus, a:hover, a:visited {
+  color: #447f3f;
+  text-decoration: underline;
+}
+
+.inside {
+  padding: 1rem 2rem;
+}
+
+/** navbar **/
+.navbar {
+  padding-left: 0.5rem;
+}
+.navbar .navbar-brand {
+  font-size: 1.1rem;
+  color: #447f3f;
+}
