@@ -47,6 +47,11 @@
   text-align: center;
 }
 
+.signup-form {
+  text-align: center;
+  margin: 0 auto;
+}
+
 h1, h2, h3, h4 {
   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
