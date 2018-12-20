@@ -7,6 +7,9 @@
   position: relative;
   color: #fefefe;
 }
+.hero-text {
+  padding-bottom: 3rem;
+}
 .bg-hero {
   background-color: #dfefde;
   background: linear-gradient(to top, #169f49 0%, #137f11 100%);
@@ -67,7 +70,9 @@ a, a.active, a:active, a:focus, a:hover, a:visited {
 
 /** navbar **/
 .navbar {
-  padding-left: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid #333;
+  background-color: #e3f4e9;
 }
 .navbar .navbar-brand {
   font-size: 1.1rem;
