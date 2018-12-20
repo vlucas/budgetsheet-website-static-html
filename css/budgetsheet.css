@@ -9,7 +9,7 @@
 }
 .bg-hero {
   background-color: #dfefde;
-  background: linear-gradient(to top, #169f49 0%, #63bc46 100%);
+  background: linear-gradient(to top, #169f49 0%, #137f11 100%);
 }
 
 /* svg */
@@ -72,4 +72,10 @@ a, a.active, a:active, a:focus, a:hover, a:visited {
 .navbar .navbar-brand {
   font-size: 1.1rem;
   color: #447f3f;
+}
+
+@media screen and (max-width: 980px) {
+  .img-responsive {
+    width: 100%;
+  }
 }
