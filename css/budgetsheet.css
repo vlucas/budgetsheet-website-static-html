@@ -15,6 +15,10 @@
 .hero-text {
   padding-bottom: 3rem;
 }
+.section-hero-secondary .hero-text {
+  padding-top: 1rem;
+  padding-bottom: 0;
+}
 .bg-hero {
   background-color: #dfefde;
   background: linear-gradient(to top, #169f49 0%, #137f11 100%);
