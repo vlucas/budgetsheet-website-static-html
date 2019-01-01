@@ -1,4 +1,5 @@
-.section-hero {
+.section-hero,
+.section-hero-secondary {
   position: relative;
   min-height: 22rem;
   padding: 4rem 0;
@@ -6,6 +7,10 @@
   background-position: 50%;
   position: relative;
   color: #fefefe;
+}
+.section-hero-secondary {
+  min-height: 6rem;
+  padding: 2rem 0;
 }
 .hero-text {
   padding-bottom: 3rem;
