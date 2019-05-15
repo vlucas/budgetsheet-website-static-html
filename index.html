@@ -5,6 +5,16 @@
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="stylesheet" href="css/spectre.min.css">
     <link rel="stylesheet" href="css/budgetsheet.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-359731-40"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-359731-40');
+    </script>
   </head>
 
   <body>
@@ -52,13 +62,13 @@
       <div class="container grid-lg">
         <div class="columns">
           <div class="column text-center col-md-12">
-            <p><span class="step-number">1</span> Enter your <a href="https://plaid.com" rel="nofollow">Plaid.com</a> API keys into the <code>SETTINGS</code> spreadsheet.</p>
+            <p><span class="step-number">1</span> Enter your <a href="https://plaid.com" rel="nofollow">Plaid.com</a> API keys into the <code>BSA_Settings</code> spreadsheet.</p>
           </div>
           <div class="column text-center col-md-12">
             <p><span class="step-number">2</span> Link your bank account(s) via the menu:<br /><code>Add-ons &gt; BudgetSheet.net &gt; Link New Account...</code></p>
           </div>
           <div class="column text-center col-md-12">
-            <p><span class="step-number">3</span> Import bank transactions directly into your spreadsheet via the menu:<br /><code>Add-ons &gt; BudgetSheet.net &gt; Fetch Latest Bank Transactions</code></p>
+            <p><span class="step-number">3</span> Import bank transactions directly into your spreadsheet via the menu:<br /><code>Add-ons &gt; BudgetSheet &gt; Fetch Latest Bank Transactions</code></p>
           </div>
         </div>
       </div>
